@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "codegen": "npx playwright codegen",
     "test": "npx playwright test",
-    "code": "npx playwright codegen", 
+    "code": "npx playwright codegen",
     "report": "npx playwright show-report",
     "ui": "npx playwright test --ui"
   },
@@ -22,6 +23,7 @@
   },
   "homepage": "https://github.com/mnmlsniper/pw7#readme",
   "devDependencies": {
+    "@faker-js/faker": "^10.4.0",
     "@playwright/test": "^1.60.0",
     "@types/node": "^25.7.0"
   }

@@ -3,7 +3,7 @@ import { test, expect } from '@playwright/test';
 const URL = 'https://realworld.qa.guru/';
 
 
-test.only('Пользователь может просмотреть 3 статьи на Главной', async ({ page }) => {
+test('Пользователь может просмотреть 3 статьи на Главной', async ({ page }) => {
   
   await page.goto(URL);
 

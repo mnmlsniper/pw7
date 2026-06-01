@@ -9,7 +9,7 @@ export class YourfeedPage {
 
     // Бизнес-сценарии на страничке
    
-     async getProfileName()
+      getProfileName()
     {
         return this.profileName;
     }

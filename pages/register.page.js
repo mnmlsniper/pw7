@@ -14,8 +14,12 @@ export class RegisterPage {
     }
 
     // Бизнес-сценарии на страничке
-    async signup(username, email, password)
+    async signup(user)
+    // ({email, password, username})
     {
+        // Деструктуризация объекта - разбираем объект на переменные
+        const {email, password, username} = user;
+           
         await this.yournameInput.click();
         await this.yournameInput.fill(username);
         await this.emailInput.click();

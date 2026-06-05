@@ -1,3 +1,6 @@
+// todo
+const URL = 'https://realworld.qa.guru/';
+
 export class MainPage {
     constructor (page) {
         // это браузер
@@ -12,4 +15,9 @@ export class MainPage {
     {
         await this.signupButton.click();
     }
+    async goto ()
+    {
+        await this.page.goto(URL);
+    }
+
 }

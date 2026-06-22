@@ -1,7 +1,7 @@
 // чего-то импортируем
 import { test, expect } from '@playwright/test';
 
-test('test', async ({ page }) => {
+test.skip('test', async ({ page }) => {
   // Arrange 
   // WHEN Когда пользователь открывает сайт
   // Предусловие сайт

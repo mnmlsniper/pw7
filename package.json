@@ -8,7 +8,9 @@
     "test": "npx playwright test",
     "code": "npx playwright codegen",
     "report": "npx playwright show-report",
-    "ui": "npx playwright test --ui"
+    "ui": "npx playwright test --ui",
+    "allureG": "npx allure generate",
+    "allureO": "npx allure open"
   },
   "repository": {
     "type": "git",
@@ -25,6 +27,7 @@
   "devDependencies": {
     "@faker-js/faker": "^10.4.0",
     "@playwright/test": "^1.60.0",
-    "@types/node": "^25.7.0"
+    "@types/node": "^25.7.0",
+    "allure-playwright": "^3.10.0"
   }
 }

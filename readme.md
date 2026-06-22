@@ -1,0 +1,1 @@
+docker compose -f oci://docker.io/mnmlsniper/mnmlsandbox:latest up -d

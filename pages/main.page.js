@@ -1,3 +1,5 @@
+import { test, expect } from '@playwright/test';
+
 // todo
 const URL = 'https://realworld.qa.guru/';
 
@@ -11,9 +13,14 @@ export class MainPage {
     }
 
     // Бизнес-сценарии на страничке
-    async gotoRegister()
-    {
-        await this.signupButton.click();
+    async gotoRegister(){
+        return test.step('Нажать на кнопку Sign up', async () => {
+           
+            await this.signupButton.click();
+       
+        });
+   
+   
     }
     async goto ()
     {

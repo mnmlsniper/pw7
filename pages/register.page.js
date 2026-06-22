@@ -1,3 +1,5 @@
+import { test, expect } from '@playwright/test';
+
 export class RegisterPage {
     constructor (page) {
         // это браузер
@@ -17,6 +19,7 @@ export class RegisterPage {
     async signup(user)
     // ({email, password, username})
     {
+        return test.step(`Зарегистроваться с реквизитами ${user}`, async () => {
         // Деструктуризация объекта - разбираем объект на переменные
         const {email, password, username} = user;
            
@@ -27,6 +30,7 @@ export class RegisterPage {
         await this.passwordInput.click();
         await this.passwordInput.fill(password);
         await this.signupButton.click();
+           });
     }
 }
 /*

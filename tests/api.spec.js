@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 //todo
 const urlApi = 'https://apichallenges.eviltester.com';
 
-test.only('API', async ({ request }) => {
+test('API', async ({ request }) => {
     let response = await request.post(`${urlApi}/challenger`);
     const headers = await response.headers();
     console.log(`${urlApi}${headers.location}`);

@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 import { allure } from 'allure-playwright';
 import { UserBuilder } from '../src/helpers';
 
-import { App } from '../pages/app';
+import { App } from '../src/pages/app';
 
 test('Пользователь может зарегистрироваться используя email и пароль', async ({ page }) => {
     allure.epic('Авторизация');

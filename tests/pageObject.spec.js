@@ -1,8 +1,8 @@
 import { test, expect } from '@playwright/test';
 import { faker } from '@faker-js/faker';
-import { MainPage } from '../pages/main.page';
-import { RegisterPage } from '../pages/register.page';
-import { YourfeedPage } from '../pages/yourfeedpage.page';
+import { MainPage } from '../src/pages/main.page';
+import { RegisterPage } from '../src/pages/register.page';
+import { YourfeedPage } from '../src/pages/yourfeedpage.page';
 
 // todo при добавлении нового теста, данные будут использованы те же самые
 const URL = 'https://realworld.qa.guru/';

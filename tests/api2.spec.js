@@ -4,7 +4,7 @@ import { expect } from '@playwright/test';
 //todo
 //const urlApi = 'https://apichallenges.eviltester.com';
 
-test.only('API', async ({ api }) => {
+test('API', async ({ api }) => {
     let body, headers;
     // arrange подготовка данных
     // act действия

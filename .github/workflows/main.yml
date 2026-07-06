@@ -4,12 +4,11 @@ name: pw7 автотесты UI/API
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
-
+    branches: [main]
 # ручной запуск
- workflow_dispatch:
+  workflow_dispatch:
 
 jobs:
   pw7:

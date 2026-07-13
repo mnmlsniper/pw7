@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "codegen": "npx playwright codegen",
-    "test": "npx playwright test",
+    "test": "STAND='prod' npx playwright test",
     "code": "npx playwright codegen",
     "report": "npx playwright show-report",
     "ui": "npx playwright test --ui",
@@ -28,6 +28,7 @@
     "@faker-js/faker": "^10.4.0",
     "@playwright/test": "^1.60.0",
     "@types/node": "^25.7.0",
-    "allure-playwright": "^3.10.0"
+    "allure-playwright": "^3.10.0",
+    "dotenv": "^17.4.2"
   }
 }

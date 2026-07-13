@@ -1,5 +1,8 @@
 # Это комментарий.
 # Это название пайплайна
+# ${{secrets.HARDCODEUSERPASSWORD}}
+# ${{vars.BACKEND_API_URL}}
+
 name: pw7 автотесты UI/API
 
 on:
@@ -24,6 +27,9 @@ jobs:
         run: npx playwright install --with-deps
       - name: Запусти тесты
         run: npm t
+        env:
+          MY_PASS: ${{secrets.HARDCODEUSERPASSWORD}}
+          BACK_API_URL: ${{vars.BACKEND_API_URL}}
       - name: Генерируем отчет
         run: npx allure awesome ./allure-results --single-file
         continue-on-error: true
